@@ -8,4 +8,12 @@ All_app Page
 
 {% block content  %}
 <h1> All App Page </h1>
+
+{% for app in apps %}
+    <div class="card" style="width: 18rem;">
+        <h2>{{ app.name }}</h2>
+
+        <img src="{{ app.image.url }}" class="card-img-top" alt="...">
+
+{% endfor %}
 {% endblock  %} 
