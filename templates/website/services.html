@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+</head>
+<body>
+    <header>
+        Our Services
+    </header>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'services' %}">Services</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+    <main>
+        <h2>What We Offer</h2>
+        <p>We provide a range of high-quality services tailored to meet your needs.</p>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>SEO Optimization</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </main>
+    <footer>
+        &copy; 2025 My Website | All rights reserved.
+    </footer>
+</body>
+</html>
